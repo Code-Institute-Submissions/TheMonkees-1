@@ -1,0 +1,25 @@
+{
+  "name": "themonkees",
+  "version": "1.0.0",
+  "description": "This is a front end website for a popular music band.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiudmilaS/TheMonkees.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiudmilaS/TheMonkees/issues"
+  },
+  "homepage": "https://github.com/LiudmilaS/TheMonkees#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.0"
+  }
+}
