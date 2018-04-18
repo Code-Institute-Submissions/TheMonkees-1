@@ -17,10 +17,9 @@ The site uses front end programming languages: HTML5, CSS. It uses Javascripts f
 ## Features
 
 ### Existing Features
-- Registration Form
-- Authentication LogIn
-- Logout
-
+- Contact Form
+- Audio playback
+- Video playback
 
 ### Features Left to Implement
 - none
@@ -34,11 +33,8 @@ The site uses front end programming languages: HTML5, CSS. It uses Javascripts f
 	- We use **npm** to help manage some of the dependencies in our application
 - [bower](https://bower.io/)
 	- **Bower** is used to manage the installation of our libraries and frameworks
-- [Django]()
-  - **Django** is used as a main framework
-- [SQLite]()
-  - **SQLite**  is used as a backend database for the app
-  
+- [jasmine]()
+  - **Jasmine** is used as a testing framework for javascript code
  
 ## Contributing
 
