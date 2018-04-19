@@ -6,6 +6,8 @@
 .navbar-custom .navbar-nav>li>a {
     color: #195084;
     font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 ul {
@@ -207,4 +209,3 @@ ul {
             margin-bottom: 100px;
             background-color:rgba(129, 187, 201,.2);
          }
-     </style>

@@ -21,5 +21,6 @@
   "homepage": "https://github.com/LiudmilaS/TheMonkees#readme",
   "dependencies": {
     "bootstrap": "^4.1.0"
-  }
+  },
+  "devDependencies": {}
 }
