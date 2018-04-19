@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Home</title>
     <link rel='stylesheet' type='text/css' href='static\css\style.css'>
-    <link rel='stylesheet' type='text/css' href='node_modules/bootstrap/dist/css/bootstrap.min.css'>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src='node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
         <body>
     <nav class="navbar navbar-expand-md navbar-inverse navbar-custom">
   <div class="container-fluid">
     <ul id="myCollapsingList" class="nav navbar-nav">
       <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="music.html">New Music</a></li>
-      <li><a href="faq.html">F.A.Q.</a></li>
-      <li><a href="reservations.html">Contact Us</a></li>
+      <li><a href="static/templates/music.html">New Music</a></li>
+      <li><a href="static/templates/faq.html">F.A.Q.</a></li>
+      <li><a href="static/templates/reservations.html">Contact Us</a></li>
     </ul>
   </div>
 </nav>
@@ -26,11 +24,11 @@
             <div class="row">
                 <div class="col-md-6">
             <h1>The Monkees</h1>
-            <a href="reservations.html">
+            <a href="static/templates/reservations.html">
             <button type="submit" class="btn btn-primary">Book Your Wedding Date Now!</button> </a>
                 </div>
                 <div class="col-md-6">
-            <img src="static\assets\images\cover3.jpg">
+            <img src="static/assets/images/cover3.jpg">
                 </div>
             </div>  
             </div> 
@@ -58,7 +56,7 @@
             </div>
             <div class="col-md-5">
                 <video <video id="video" controls= "controls" poster= "static\assets\images\monkees.jpg">
-                    <source src="static\assets\video\TheMonkees.mp4"/> </video>
+                    <source src="static/assets/video/TheMonkees.mp4"/> </video>
                 </div>
             </div>
         </div>  
@@ -67,6 +65,8 @@
         <h2>Copyright</h2>
 </footer>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<script type="text/javascript" src="static\js\script.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>>
 </body>
 </html>
