@@ -13,7 +13,7 @@ function givePrice(){
 
 function checkDate(){
 	var d = document.forms["registrationForm"]["date"].value;
-	v = Date.parse(v);
+	d = Date.parse(d);
 	var n = d.getDay();
 	if (n >= 1 & n <= 3){
 		window.alert("Sorry we do not work Monday - Wednesday");

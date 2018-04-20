@@ -1,18 +1,3 @@
-$(document).ready(function() {
-    $(".navbar-custom .navbar-nav>li>a").mouseenter(function(){  
-    	$(".navbar-custom .navbar-nav>li>a").css("color", "green");
- });
-    $(".navbar-custom .navbar-nav>li>a").mouseenter(function(){  
-    	$(".navbar-custom .navbar-nav>li>a").css("font-size", "30px");
- });
-     $(".navbar-custom .navbar-nav>li>a").mouseleave(function(){  
-    	$(".navbar-custom .navbar-nav>li>a").css("color", "#195084");
- });
-    $(".navbar-custom .navbar-nav>li>a").mouseleave(function(){  
-    	$(".navbar-custom .navbar-nav>li>a").css("font-size", "20px");
- });
-});
-
 function givePrice(){
 	var field = document.forms["registrationForm"]["duration"].value;
 	if (field >= 1 & field <= 4){
@@ -36,6 +21,15 @@ function checkDate(){
 	else{
 		window.alert("Great! Looks like we are available!");
 	}
+}
+
+function myTopnav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
 }
 
 

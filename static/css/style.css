@@ -1,15 +1,117 @@
-
-
-.navbar-custom {
-   background-color: transparent;
-   border-color: #95c7db;
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  margin-left: 65px;
 }
-.navbar-custom .navbar-nav>li>a {
-    color: #195084;
-    font-size: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #0f6846;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
 }
+
+.active {
+  color: #0f6846;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 768px)
+.jumbotron .h1, .jumbotron h1 {
+    font-size: 63px;
+}
+
 
 ul {
    font-size: larger;
@@ -60,6 +162,13 @@ ul {
          color:#a53931;
          font-weight: bold;
 
+      }
+
+      .faq{
+        color:#f8fce7!important;
+        font-family: 'Ultra'!important;
+        font-size: 16px!important;
+        color: #f8fce7!important;
       }
          #container{
             width: 450px;

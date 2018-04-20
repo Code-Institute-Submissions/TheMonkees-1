@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>F.A.Q.</title>
     <link rel='stylesheet' type='text/css' href='../css/style.css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="..\..\node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 </head>
 <body> 
-    <nav class="navbar navbar-expand-md navbar-inverse navbar-custom">
-  <div class="container-fluid">
-    <ul id="myCollapsingList" class="nav navbar-nav">
-      <li class="active"><a href="../../index.html">Home</a></li>
-      <li><a href="../templates/music.html">New Music</a></li>
-      <li><a href="../templates/faq.html">F.A.Q.</a></li>
-      <li><a href="../templates/reservations.html">Contact Us</a></li>
-    </ul>
-  </div>
-</nav>
+    <div class="topnav" id="myTopnav">
+  <a href="../../index.html" class="active">Home</a>
+  <a href="../templates/music.html">Music</a>
+  <a href="../templates/faq.html">F.A.Q.</a>
+  <a href="../templates/reservations.html">Contact Us</a>
+  <div class="dropdown">
+    <div class="dropdown-content">
+      <a href="../templates/music.html">Music</a>
+      <a href="../templates/faq.html">F.A.Q.</a>
+      <a href="../templates/reservations.html">Contact Us</a>
+    </div>
+  </div> 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myTopnav()">&#9776;</a>
+</div>
     <div class ="container">
         <div class="jumbotron jumbotron-custom">
             <div class="container">
@@ -39,7 +44,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Q: How do I go about booking The Monkees for my event?</a>
+                        <a class="faq" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Q: How do I go about booking The Monkees for my event?</a>
                     </h4>
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse">
@@ -51,7 +56,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Q: Who is the booking co-ordinator and can I be rest assured that my email responses will be prompt?</a>
+                        <a class="faq" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Q: Who is the booking co-ordinator and can I be rest assured that my email responses will be prompt?</a>
                     </h4>
                 </div>
                 <div id="collapseTwo" class="panel-collapse collapse">
@@ -63,7 +68,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Q: Will the band i book at the showcase be the band i get on the night? </a>
+                        <a class="faq" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Q: Will the band i book at the showcase be the band i get on the night? </a>
                     </h4>
                 </div>
                 <div id="collapseThree" class="panel-collapse collapse">
@@ -75,7 +80,7 @@
                 <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Q: How much of a deposit do you require ?</a>
+                        <a class="faq" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Q: How much of a deposit do you require ?</a>
                     </h4>
                 </div>
                 <div id="collapseFour" class="panel-collapse collapse">
@@ -87,7 +92,7 @@
                 <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Q: How long do TheMonkees play for?</a>
+                        <a class="faq" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Q: How long do TheMonkees play for?</a>
                     </h4>
                 </div>
                 <div id="collapseFive" class="panel-collapse collapse">
@@ -99,7 +104,7 @@
                 <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Q: Do TheMonkees travel around Ireland?</a>
+                        <a class="faq" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Q: Do TheMonkees travel around Ireland?</a>
                     </h4>
                 </div>
                 <div id="collapseSix" class="panel-collapse collapse">
@@ -111,7 +116,7 @@
                 <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Q: Do TheMonkees learn the first dance of your choice ?</a>
+                        <a class="faq" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Q: Do TheMonkees learn the first dance of your choice ?</a>
                     </h4>
                 </div>
                 <div id="collapseSeven" class="panel-collapse collapse">
@@ -123,7 +128,7 @@
                 <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Q: When do we pay the remaining balance ?</a>
+                        <a class="faq" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Q: When do we pay the remaining balance ?</a>
                     </h4>
                 </div>
                 <div id="collapseEight" class="panel-collapse collapse">
@@ -135,7 +140,7 @@
                 <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">Q: Can TheMonkees supply the | church music | Pre-dinner music | DJ ?</a>
+                        <a class="faq" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">Q: Can TheMonkees supply the | church music | Pre-dinner music | DJ ?</a>
                     </h4>
                 </div>
                 <div id="collapseNine" class="panel-collapse collapse">
@@ -152,7 +157,7 @@
     </div>
         </footer>
 <script type="text/javascript" src="../js/script.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="..\..\node_modules\bootstrap\dist\js\bootstrap.min.js""></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 
 </body>
