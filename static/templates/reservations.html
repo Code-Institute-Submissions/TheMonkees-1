@@ -43,7 +43,7 @@
         <div class='row'>
         <div class='col-md-6'>
                <div id="input_types">
-                  <form name="registrationForm" data-ng-submit="submitForm()" onsubmit="return checkDate();return givePrice()">
+                  <form name="registrationForm" data-ng-submit="submitForm()" onsubmit="return checkForm(this['duration'].value, this['date'].value)">
                      <div class="form-group">
                     <label>Name</label><p data-ng-show="registrationForm.name.$pristine" class="help-block">Your username is required</p>
                     <input type="text" name="name" class="form-control" data-ng-model="user.name" required>
@@ -88,6 +88,5 @@
         </footer>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src="..\..\node_modules\bootstrap\dist\js\bootstrap.min.js""></script>
-<script type="text/javascript" src="../js/script.js"></script>
 <script src="../js/reg.js"></script>
 </body>
