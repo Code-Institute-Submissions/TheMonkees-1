@@ -23,25 +23,21 @@
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myTopnav()">&#9776;</a>
 </div>
     <div class ="container">
-        <div class="jumbotron jumbotron-custom">
+        <div class="jumbotron jumbotron-fluid jumbotron-custom">
             <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-            <h1>The Monkees</h1>
-            <a href="../../index.html">
-            <button type="submit" class="btn btn-primary">Back to Home</button> </a>
+            <div class="col-md-12">
+            <img class="float-left img-thumbnail img-fluid" src="../assets/images/cover3.jpg">
+            <h1 class="monkees float-right">The Monkees</h1>
+            <a href="static/templates/reservations.html">
+            <button type="submit" class="btn btn-outline-warning btn-lg btn-block">Back to Home page!</button> </a>
                 </div>
-                <div class="col-md-6">
-            <img src="../assets/images/cover3.jpg">
-                </div>
-            </div>  
-            </div> 
+            </div>
         </div>
     </div>
     <div ng-controller='SelectionController'>
-        <div class="container">
+        <div class="container-fluid">
         <div class='row'>
-        <div class='col-md-6'>
+        <div class='col-md-6 booking'>
                <div id="input_types">
                   <form name="registrationForm" data-ng-submit="submitForm()" onsubmit="return checkForm(this['duration'].value, this['date'].value)">
                      <div class="form-group">
@@ -68,12 +64,12 @@
                     <p data-ng-show="registrationForm.password.$pristine" class="help-block">Event date is required</p>
                     <input type="Date" name="date" class="form-control" data-ng-model="user.Date" required>
                 </div>
-                     <button type="submit" class="btn btn-primary" data-ng-disabled="registrationForm.$invalid">Book Now!</button>
+                     <button type="submit" class="btn btn-default btn-md" data-ng-disabled="registrationForm.$invalid">Book Now!</button>
                   </form> 
               </div>
           </div>
               <div class col-md-6>
-                  <img src="../assets/images/album2.jpg" align="right">
+                  <img class="img-thumbnail img-fluid" src="../assets/images/album2.jpg" align="right">
               </div>
           </div>
             </div>

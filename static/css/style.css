@@ -1,13 +1,12 @@
 .topnav {
   overflow: hidden;
-  background-color: transparent;
-  margin-left: 65px;
+  background-color: #0f6846;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #0f6846;
+  color: #f8fce7;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -120,16 +119,28 @@ ul {
 }
 
 .jumbotron-custom {
-   background-color: #195084!important;
-   color:#ffc53e!important;
+   background-color: transparent!important;
+   color:#ff0000!important;
 }
-.jumbotron-custom img{
-   display: block;
-   margin-left: 200px;
-}
+
 
 .jumbotron-custom button{
    align-self: middle;
+}
+
+.btn{
+    color:#ff0000!important;
+    border-color: #ff0000!important;
+    background-color: #0f6846;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.img-thumbnail{
+    margin-bottom: 10px;
+}
+
+.monkees{
+    font-size: 100px!important;
+    margin-left: 30px!important;
 }
 
 .footer {padding-top: 5px;
@@ -235,6 +246,16 @@ ul {
    
       form{
         width: 350px;
+        height: 700px;
+      }
+
+      .booking{
+        margin-left: 30px;
+        margin-right: 10px;
+      }
+
+      .btn-default{
+        background-color:  #f8fce7!important;
       }
 
          #container{
