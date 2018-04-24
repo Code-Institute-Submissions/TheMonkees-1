@@ -54,3 +54,4 @@ The site uses front end programming languages: HTML5, CSS. It uses Javascripts f
 5. Once **http-server** is installed run ```http-server```
 6. The project will now run on [localhost](http://127.0.0.1:8080)
 7. Make changes to the code and if you think it belongs in here then just submit a pull request
+8. Live demonstration at https://liudmilas.github.io/TheMonkees/index.html
